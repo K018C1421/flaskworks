@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 
-def hello_world():
+def toppage():
     return 'トップページ'
 
 if __name__ == '__main__':
