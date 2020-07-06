@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def hello_world():
-    return 'トップページ'
+    return '繝医ャ繝励�壹�ｼ繧ｸ'
 
 if __name__ == '__main__':
     app.debug = True
