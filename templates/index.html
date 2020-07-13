@@ -6,8 +6,10 @@
 
     <body>
         <ul>
-            {% for key in list %}
-            <li>{{ key }} {{ list[key] }}</li>
+            {% for n in range(1, num) %}
+            {% if n % 2 != 0 %}
+            {{n}}
+            {% endif %}
             {% endfor %}
         </ul>
     </body>
