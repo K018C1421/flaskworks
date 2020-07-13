@@ -6,11 +6,13 @@
 
     <body>
         <ul>
-            {% for n in range(1, num) %}
-            {% if n % 2 != 0 %}
-            {{n}}
+            <h1>70点以上の科目：
+            {% for key in list %}
+            {% if list[key] >= 70 %}
+            {{ key }}
             {% endif %}
             {% endfor %}
+            </h1>
         </ul>
     </body>
 </html>

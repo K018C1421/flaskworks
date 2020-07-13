@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    list = {"‰pŒê":87, "”Šw":90, "‘Œê":45, "—‰È":76, "Ğ‰ï":31}
+    list = {"è‹±èª":87, "æ•°å­¦":90, "å›½èª":45, "ç†ç§‘":76, "ç¤¾ä¼š":31}
     return render_template('index.html', list=list)
 
 if __name__ == '__main__':
