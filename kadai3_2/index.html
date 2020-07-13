@@ -6,8 +6,12 @@
 
     <body>
         <ul>
+            <h1>70点以上の科目：</h1>
+            <h2>
             {% for key in list %}
-            <li>{{ key }} {{ list[key] }}</li>
+            {% if list[key] >= 70 %}
+            {{ key }}
+            {% endif %}
             {% endfor %}
             </h2>
         </ul>
