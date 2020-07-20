@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        {% if message != '' %}
-        <h1>サーバで受け取ったメッセージ：{{ message }}</h1>
+        {% if nm != '' and ml != '' %}
+        <h1>{{ nm }}：{{ ml }}を受け取りました</h1>
         {% else %}
-        <h1>受け取ったメッセージはありません</h1>
+        <h1>入力エラー</h1>
         {% endif %}
     </body>
 </html>
