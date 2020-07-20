@@ -5,6 +5,9 @@
     </head>
 
     <body>
-        <h1>{{ profile }}を追加しました。</h1>
+        <form method="post" action="/send">
+            <input type="text" id="msg" name="msg">
+            <input type="submit" value="送信">
+        </form>
     </body>
 </html>
