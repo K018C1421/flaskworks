@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        {% if nm != '' and ml != '' %}
+        <h1>{{ nm }}：{{ ml }}を受け取りました</h1>
+        {% else %}
+        <h1>入力エラー</h1>
+        {% endif %}
+    </body>
+</html>
