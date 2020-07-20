@@ -5,10 +5,13 @@
     </head>
 
     <body>
-        <form method="post" action="/send">
-            名前：<input type="text" id="name" name="name"><br>
-            E-Mail：<input type="text" id="mail" name="mail"><br>
+        <form method="post" action="/">
+            入力歩数：<input type="text" id="num" name="num"><br>
             <input type="submit" value="送信">
         </form>
+        <hr>
+        {% for l in range(len) %}
+        <li>{{ t[l] }}　歩数：{{ n[l] }}</li>
+        {% endfor %}
     </body>
 </html>
