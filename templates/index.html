@@ -10,8 +10,10 @@
             <input type="submit" value="送信">
         </form>
         <hr>
-        {% for l in range(len) %}
+        {% if length != None %}
+        {% for l in range(length) %}
         <li>{{ t[l] }}　歩数：{{ n[l] }}</li>
         {% endfor %}
+        {% endif %}
     </body>
 </html>
