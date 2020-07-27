@@ -5,16 +5,9 @@
     </head>
 
     <body>
-        <form method="post" action="/">
-            入力歩数：<input type="text" id="num" name="num"><br>
+        <form method="post" action="/send" enctype="multipart/form-data">
+            <input type="file" id="img_file" name="img_file">
             <input type="submit" value="送信">
         </form>
-        <hr>
-        <h1>平均歩数：{{ avesum }}</h1>
-        {% if length != None %}
-        {% for l in range(length) %}
-        <li>{{ t[l] }}　歩数：{{ n[l] }}</li>
-        {% endfor %}
-        {% endif %}
     </body>
 </html>
