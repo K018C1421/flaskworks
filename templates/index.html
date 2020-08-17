@@ -21,9 +21,9 @@
             <table>
                 <tr><th></th><th></th><th>タイトル</th><th>価格</th></tr>
                 {% for (id, title, price, image) in list %}
-                    <tr><td><input type="checkbox" name="del_list" value="{{ id }}"><td>
-                        <td><img src="./static/uploads/{{ image }}" width="50" heigth="50"></td>
-                    {{ title }}</td><td>{{ price }}円</td></tr>
+                <tr><td><input type="checkbox" name="del_list" value="{{ id }}"><td>
+                    <td><img src="./static/uploads/{{ image }}" width="50" heigth="50"></td>
+                <td>{{ title }}</td><td>{{ price }}円</td></tr>
                 {% endfor %}
             </table>
         </form>
