@@ -2,16 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <h1>ToDoリスト</h1>
     </head>
 
     <body>
         <form method="post" action="/send" enctype="multipart/form-data">
-            <label for="title">タイトル</label>
+            <label for="title">追加項目</label>
             <input type="text" id="title" name="title">
-            <label for="price">価格</label>
-            <input type="number" id="price" name="price">
-            <label for="img_file">画像</label>
-            <input type="file" id="img_file" name="img_file">
             <input type="submit" value="送信">
         </form>
 
@@ -19,11 +16,10 @@
         <form method="post" action="/delete">
             <input type="submit" value="削除"><br>
             <table>
-                <tr><th></th><th></th><th>タイトル</th><th>価格</th></tr>
-                {% for (id, title, price, image) in list %}
-                <tr><td><input type="checkbox" name="del_list" value="{{ id }}"><td>
-                    <td><img src="./static/uploads/{{ image }}" width="50" heigth="50"></td>
-                <td>{{ title }}</td><td>{{ price }}円</td></tr>
+                <tr><th></th><th>日付</th><th>タイトル</th></tr>
+                {% for (id, date, title) in todolist %}
+                <tr><td><input type="checkbox" name="del_list" value="{{ id }}"></td>
+                    <td>{{ date }}</td><td>{{ title }}</td></tr>
                 {% endfor %}
             </table>
         </form>
